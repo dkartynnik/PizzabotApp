@@ -30,7 +30,7 @@ Possible Pizzabot actions are:
 
 Pizzabot always starts at the origin point, (0, 0). As with a Cartesian plane, this point lies at the most south-westerly point of the grid.
 
-By default Pizzabot doesn't take optimality of route into account and moves on grid in the followind priority: east > west > north > south.
+By default Pizzabot doesn't take optimality of route into account and moves on the grid according to the following priority: east > west > north > south.
 
 ## How to use
 
