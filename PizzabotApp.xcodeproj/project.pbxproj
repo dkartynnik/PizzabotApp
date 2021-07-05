@@ -19,6 +19,8 @@
 		5F9C9787269275B5000B805D /* RegExHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C9785269275B5000B805D /* RegExHelper.swift */; };
 		5F9C9788269275B5000B805D /* Pizzabot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C9786269275B5000B805D /* Pizzabot.swift */; };
 		5F9C978A269275BF000B805D /* PizzabotType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C9789269275BF000B805D /* PizzabotType.swift */; };
+		5FC306B2269306B700988A9D /* InputValidatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC306B1269306B700988A9D /* InputValidatorType.swift */; };
+		5FC306B4269307B700988A9D /* DefaultInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC306B3269307B700988A9D /* DefaultInputValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +46,8 @@
 		5F9C9785269275B5000B805D /* RegExHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegExHelper.swift; sourceTree = "<group>"; };
 		5F9C9786269275B5000B805D /* Pizzabot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pizzabot.swift; sourceTree = "<group>"; };
 		5F9C9789269275BF000B805D /* PizzabotType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzabotType.swift; sourceTree = "<group>"; };
+		5FC306B1269306B700988A9D /* InputValidatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputValidatorType.swift; sourceTree = "<group>"; };
+		5FC306B3269307B700988A9D /* DefaultInputValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultInputValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,45 +99,47 @@
 			isa = PBXGroup;
 			children = (
 				5F9C977726927535000B805D /* main.swift */,
-				5F9C977F2692757C000B805D /* Structs */,
-				5F9C978026927585000B805D /* Protocols */,
-				5F9C977E26927574000B805D /* Classes */,
+				5FC306AD2693034F00988A9D /* Area */,
+				5FC306AE2693036400988A9D /* Bot */,
+				5FC306B0269306A000988A9D /* Validator */,
+				5FC306AF2693038A00988A9D /* Support */,
 			);
 			path = PizzabotApp;
 			sourceTree = "<group>";
 		};
-		5F9C977E26927574000B805D /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				5F9C9786269275B5000B805D /* Pizzabot.swift */,
-				5F9C978B269275C8000B805D /* Other */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		5F9C977F2692757C000B805D /* Structs */ = {
+		5FC306AD2693034F00988A9D /* Area */ = {
 			isa = PBXGroup;
 			children = (
 				5F9C9781269275A5000B805D /* Point.swift */,
 				5F9C9782269275A5000B805D /* Region.swift */,
 			);
-			path = Structs;
+			path = Area;
 			sourceTree = "<group>";
 		};
-		5F9C978026927585000B805D /* Protocols */ = {
+		5FC306AE2693036400988A9D /* Bot */ = {
 			isa = PBXGroup;
 			children = (
 				5F9C9789269275BF000B805D /* PizzabotType.swift */,
+				5F9C9786269275B5000B805D /* Pizzabot.swift */,
 			);
-			path = Protocols;
+			path = Bot;
 			sourceTree = "<group>";
 		};
-		5F9C978B269275C8000B805D /* Other */ = {
+		5FC306AF2693038A00988A9D /* Support */ = {
 			isa = PBXGroup;
 			children = (
 				5F9C9785269275B5000B805D /* RegExHelper.swift */,
 			);
-			path = Other;
+			path = Support;
+			sourceTree = "<group>";
+		};
+		5FC306B0269306A000988A9D /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				5FC306B1269306B700988A9D /* InputValidatorType.swift */,
+				5FC306B3269307B700988A9D /* DefaultInputValidator.swift */,
+			);
+			path = Validator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +244,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F9C9784269275A5000B805D /* Region.swift in Sources */,
+				5FC306B2269306B700988A9D /* InputValidatorType.swift in Sources */,
 				5F9C9783269275A5000B805D /* Point.swift in Sources */,
 				5F9C978A269275BF000B805D /* PizzabotType.swift in Sources */,
 				5F9C977826927535000B805D /* main.swift in Sources */,
+				5FC306B4269307B700988A9D /* DefaultInputValidator.swift in Sources */,
 				5F9C9788269275B5000B805D /* Pizzabot.swift in Sources */,
 				5F9C9787269275B5000B805D /* RegExHelper.swift in Sources */,
 			);

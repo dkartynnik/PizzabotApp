@@ -3,12 +3,7 @@ import Foundation
 
 final class Pizzabot: PizzabotType {
     
-    private let dimensionsPattern = "\\s*[0-9]+\\s*x\\s*[0-9]+\\s*"
-    private let pointPattern = "\\s*\\(\\s*[0-9]+\\s*,\\s*[0-9]+\\s*\\)\\s*"
-    private var initialStringPattern: String { "^" + dimensionsPattern + "(?:" + pointPattern + ")*" + "$" }
-    private let dimensionsSeparators = "xX"
-    private let pointSeparators = ","
-    private let pointTrimmingCharacters = "()"
+    private let inputValidator: InputValidatorType = DefaultInputValidator()
     
     enum Errors: Error {
         case wrongInitialStringFormat
@@ -67,8 +62,7 @@ final class Pizzabot: PizzabotType {
     }
     
     private func check(formatOf initialString: String) throws {
-        let regex = try! NSRegularExpression(pattern: initialStringPattern, options: .caseInsensitive)
-        if regex.firstMatch(in: initialString, options: [], range: NSRange(location: 0, length: initialString.count)) == nil {
+        if RegExHelper.check(if: initialString, matches: inputValidator.initialStringPattern) != true {
             throw Self.Errors.wrongInitialStringFormat
         }
     }
@@ -82,13 +76,13 @@ final class Pizzabot: PizzabotType {
     }
     
     private func get(dimensionsFrom initialString: String) throws -> (x: Int, y: Int) {
-        guard let matchingStrings = RegExHelper.getMatchingStrings(from: initialString, matching: dimensionsPattern),
+        guard let matchingStrings = RegExHelper.getMatchingStrings(from: initialString, matching: inputValidator.dimensionsPattern),
               matchingStrings.count == 1,
               let matchingString = matchingStrings.first
         else {
             throw Self.Errors.unexpectedRegExMatchResult
         }
-        let separators = CharacterSet(charactersIn: dimensionsSeparators)
+        let separators = CharacterSet(charactersIn: inputValidator.dimensionsSeparators)
         let components = matchingString.components(separatedBy: separators)
             .map({ $0.trimmingCharacters(in: .whitespacesAndNewlines) })
             .compactMap({ Int($0) })
@@ -102,14 +96,14 @@ final class Pizzabot: PizzabotType {
     
     private func get(pointsFrom initialString: String) throws -> [Point] {
         var points: [Point] = []
-        guard let matchingStrings = RegExHelper.getMatchingStrings(from: initialString, matching: pointPattern)
+        guard let matchingStrings = RegExHelper.getMatchingStrings(from: initialString, matching: inputValidator.pointPattern)
         else {
             throw Self.Errors.unexpectedRegExMatchResult
         }
-        let separators = CharacterSet(charactersIn: pointSeparators)
+        let separators = CharacterSet(charactersIn: inputValidator.pointSeparators)
         for matchingString in matchingStrings {
             let components = matchingString.components(separatedBy: separators)
-                .map({ $0.trimmingCharacters(in: CharacterSet(charactersIn: pointTrimmingCharacters).union(.whitespacesAndNewlines)) })
+                .map({ $0.trimmingCharacters(in: CharacterSet(charactersIn: inputValidator.pointTrimmingCharacters).union(.whitespacesAndNewlines)) })
                 .compactMap({ Int($0) })
             if components.count != 2 {
                 throw Self.Errors.unexpectedStringComponentsCount
