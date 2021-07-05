@@ -21,7 +21,9 @@ final class Pizzabot: PizzabotType {
     }
     
     func route(for initialString: String) throws -> String {
-        try check(formatOf: initialString)
+        if !inputValidator.validate(initialString) {
+            throw Self.Errors.wrongInitialStringFormat
+        }
         let dimensions = try get(dimensionsFrom: initialString)
         let points = try get(pointsFrom: initialString)
         let region = Region(xMin: 0, yMin: 0, xMax: dimensions.x, yMax: dimensions.y)
@@ -59,12 +61,6 @@ final class Pizzabot: PizzabotType {
             updatedTravelHistory = move(to: nextPoint, from: updatedPoint, with: updatedTravelHistory)
         }
         return updatedTravelHistory
-    }
-    
-    private func check(formatOf initialString: String) throws {
-        if RegExHelper.check(if: initialString, matches: inputValidator.initialStringPattern) != true {
-            throw Self.Errors.wrongInitialStringFormat
-        }
     }
     
     private func check(if points: [Point], in region: Region) throws {
