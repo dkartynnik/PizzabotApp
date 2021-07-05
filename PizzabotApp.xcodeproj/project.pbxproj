@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F284BB026929DAF00FBC80E /* PizzabotAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F284BAF26929DAF00FBC80E /* PizzabotAppTests.swift */; };
+		5F284BB526929DBA00FBC80E /* RegExHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C9785269275B5000B805D /* RegExHelper.swift */; };
+		5F284BB626929DBC00FBC80E /* Pizzabot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C9786269275B5000B805D /* Pizzabot.swift */; };
+		5F284BB726929DBF00FBC80E /* PizzabotType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C9789269275BF000B805D /* PizzabotType.swift */; };
+		5F284BB826929DC100FBC80E /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C9782269275A5000B805D /* Region.swift */; };
+		5F284BB926929DC300FBC80E /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C9781269275A5000B805D /* Point.swift */; };
+		5F9C977826927535000B805D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C977726927535000B805D /* main.swift */; };
+		5F9C9783269275A5000B805D /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C9781269275A5000B805D /* Point.swift */; };
+		5F9C9784269275A5000B805D /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C9782269275A5000B805D /* Region.swift */; };
+		5F9C9787269275B5000B805D /* RegExHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C9785269275B5000B805D /* RegExHelper.swift */; };
+		5F9C9788269275B5000B805D /* Pizzabot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C9786269275B5000B805D /* Pizzabot.swift */; };
+		5F9C978A269275BF000B805D /* PizzabotType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C9789269275BF000B805D /* PizzabotType.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5F9C977226927535000B805D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5F284BAD26929DAF00FBC80E /* PizzabotAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PizzabotAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F284BAF26929DAF00FBC80E /* PizzabotAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzabotAppTests.swift; sourceTree = "<group>"; };
+		5F284BB126929DAF00FBC80E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F9C977426927535000B805D /* PizzabotApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PizzabotApp; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F9C977726927535000B805D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5F9C9781269275A5000B805D /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		5F9C9782269275A5000B805D /* Region.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		5F9C9785269275B5000B805D /* RegExHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegExHelper.swift; sourceTree = "<group>"; };
+		5F9C9786269275B5000B805D /* Pizzabot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pizzabot.swift; sourceTree = "<group>"; };
+		5F9C9789269275BF000B805D /* PizzabotType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzabotType.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F284BAA26929DAF00FBC80E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F9C977126927535000B805D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F284BAE26929DAF00FBC80E /* PizzabotAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F284BAF26929DAF00FBC80E /* PizzabotAppTests.swift */,
+				5F284BB126929DAF00FBC80E /* Info.plist */,
+			);
+			path = PizzabotAppTests;
+			sourceTree = "<group>";
+		};
+		5F9C976B26927535000B805D = {
+			isa = PBXGroup;
+			children = (
+				5F9C977626927535000B805D /* PizzabotApp */,
+				5F284BAE26929DAF00FBC80E /* PizzabotAppTests */,
+				5F9C977526927535000B805D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F9C977526927535000B805D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F9C977426927535000B805D /* PizzabotApp */,
+				5F284BAD26929DAF00FBC80E /* PizzabotAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F9C977626927535000B805D /* PizzabotApp */ = {
+			isa = PBXGroup;
+			children = (
+				5F9C977726927535000B805D /* main.swift */,
+				5F9C977F2692757C000B805D /* Structs */,
+				5F9C978026927585000B805D /* Protocols */,
+				5F9C977E26927574000B805D /* Classes */,
+			);
+			path = PizzabotApp;
+			sourceTree = "<group>";
+		};
+		5F9C977E26927574000B805D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5F9C9786269275B5000B805D /* Pizzabot.swift */,
+				5F9C978B269275C8000B805D /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5F9C977F2692757C000B805D /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				5F9C9781269275A5000B805D /* Point.swift */,
+				5F9C9782269275A5000B805D /* Region.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		5F9C978026927585000B805D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5F9C9789269275BF000B805D /* PizzabotType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5F9C978B269275C8000B805D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				5F9C9785269275B5000B805D /* RegExHelper.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F284BAC26929DAF00FBC80E /* PizzabotAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F284BB226929DAF00FBC80E /* Build configuration list for PBXNativeTarget "PizzabotAppTests" */;
+			buildPhases = (
+				5F284BA926929DAF00FBC80E /* Sources */,
+				5F284BAA26929DAF00FBC80E /* Frameworks */,
+				5F284BAB26929DAF00FBC80E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PizzabotAppTests;
+			productName = PizzabotAppTests;
+			productReference = 5F284BAD26929DAF00FBC80E /* PizzabotAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5F9C977326927535000B805D /* PizzabotApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F9C977B26927535000B805D /* Build configuration list for PBXNativeTarget "PizzabotApp" */;
+			buildPhases = (
+				5F9C977026927535000B805D /* Sources */,
+				5F9C977126927535000B805D /* Frameworks */,
+				5F9C977226927535000B805D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PizzabotApp;
+			productName = PizzabotApp;
+			productReference = 5F9C977426927535000B805D /* PizzabotApp */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F9C976C26927535000B805D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					5F284BAC26929DAF00FBC80E = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					5F9C977326927535000B805D = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 5F9C976F26927535000B805D /* Build configuration list for PBXProject "PizzabotApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F9C976B26927535000B805D;
+			productRefGroup = 5F9C977526927535000B805D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F9C977326927535000B805D /* PizzabotApp */,
+				5F284BAC26929DAF00FBC80E /* PizzabotAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F284BAB26929DAF00FBC80E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F284BA926929DAF00FBC80E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F284BB626929DBC00FBC80E /* Pizzabot.swift in Sources */,
+				5F284BB026929DAF00FBC80E /* PizzabotAppTests.swift in Sources */,
+				5F284BB926929DC300FBC80E /* Point.swift in Sources */,
+				5F284BB726929DBF00FBC80E /* PizzabotType.swift in Sources */,
+				5F284BB826929DC100FBC80E /* Region.swift in Sources */,
+				5F284BB526929DBA00FBC80E /* RegExHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F9C977026927535000B805D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F9C9784269275A5000B805D /* Region.swift in Sources */,
+				5F9C9783269275A5000B805D /* Point.swift in Sources */,
+				5F9C978A269275BF000B805D /* PizzabotType.swift in Sources */,
+				5F9C977826927535000B805D /* main.swift in Sources */,
+				5F9C9788269275B5000B805D /* Pizzabot.swift in Sources */,
+				5F9C9787269275B5000B805D /* RegExHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5F284BB326929DAF00FBC80E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = P9C362BAX7;
+				INFOPLIST_FILE = PizzabotAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kcoding.PizzabotAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5F284BB426929DAF00FBC80E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = P9C362BAX7;
+				INFOPLIST_FILE = PizzabotAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kcoding.PizzabotAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5F9C977926927535000B805D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F9C977A26927535000B805D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		5F9C977C26927535000B805D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P9C362BAX7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				"TEST_HOST[sdk=*]" = YES;
+			};
+			name = Debug;
+		};
+		5F9C977D26927535000B805D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P9C362BAX7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				"TEST_HOST[sdk=*]" = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F284BB226929DAF00FBC80E /* Build configuration list for PBXNativeTarget "PizzabotAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F284BB326929DAF00FBC80E /* Debug */,
+				5F284BB426929DAF00FBC80E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F9C976F26927535000B805D /* Build configuration list for PBXProject "PizzabotApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F9C977926927535000B805D /* Debug */,
+				5F9C977A26927535000B805D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F9C977B26927535000B805D /* Build configuration list for PBXNativeTarget "PizzabotApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F9C977C26927535000B805D /* Debug */,
+				5F9C977D26927535000B805D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F9C976C26927535000B805D /* Project object */;
+}
