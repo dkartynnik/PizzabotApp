@@ -5,11 +5,15 @@ final class Pizzabot: PizzabotType {
     
     private let inputValidator: InputValidatorType = DefaultInputValidator()
     
-    enum Errors: Error {
+    enum Errors: String, LocalizedError {
         case wrongInitialStringFormat
         case unexpectedRegExMatchResult
         case unexpectedStringComponentsCount
         case notAllPointsInRegion
+        
+        var errorDescription: String? {
+            return self.rawValue
+        }
     }
     
     private enum Actions: String {

@@ -21,6 +21,8 @@
 		5F9C978A269275BF000B805D /* PizzabotType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C9789269275BF000B805D /* PizzabotType.swift */; };
 		5FC306B2269306B700988A9D /* InputValidatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC306B1269306B700988A9D /* InputValidatorType.swift */; };
 		5FC306B4269307B700988A9D /* DefaultInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC306B3269307B700988A9D /* DefaultInputValidator.swift */; };
+		5FC306B52693206C00988A9D /* InputValidatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC306B1269306B700988A9D /* InputValidatorType.swift */; };
+		5FC306B62693207000988A9D /* DefaultInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC306B3269307B700988A9D /* DefaultInputValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -231,6 +233,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F284BB626929DBC00FBC80E /* Pizzabot.swift in Sources */,
+				5FC306B62693207000988A9D /* DefaultInputValidator.swift in Sources */,
+				5FC306B52693206C00988A9D /* InputValidatorType.swift in Sources */,
 				5F284BB026929DAF00FBC80E /* PizzabotAppTests.swift in Sources */,
 				5F284BB926929DC300FBC80E /* Point.swift in Sources */,
 				5F284BB726929DBF00FBC80E /* PizzabotType.swift in Sources */,

@@ -36,9 +36,25 @@ By default Pizzabot doesn't take optimality of route into account and moves on t
 
 Provide input string using the following format: grid dimensions separated by "X" or "x" character followed by any number of points in parentheses separated by comma. Number of spacers between characters doesn't matter.
 
+### In Terminal:
+
+- Open the project in Xcode
+- Select PizzabotApp scheme
+- Build the project
+- Find PizzabotApp exec file in projects hierarchy "Products" folder and run it
+- Input instructions string in terminal window
+
+Example usage:
+
+```
+Input instructions string:
+5x5 (1, 3) (4, 4)
+Result: ENNNDEEEND
+```
+
 ### In Xcode:
 
-- You can run pizzabot throught the "main.swift" file using Pizzabot route(for:) method.
+- You can also run pizzabot throught the "main.swift" file using Pizzabot route(for:) method
 
 Example usage:
 

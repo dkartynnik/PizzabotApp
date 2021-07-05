@@ -1,12 +1,23 @@
 
 import Foundation
 
+enum Messages: String {
+    case inputInstructionsString = "Input instructions string:"
+    case result = "Result:"
+}
+
 let pizzabot: PizzabotType = Pizzabot()
 
-do {
-    print(try pizzabot.route(for: "5x5 (1, 3) (4, 4)"))
-    print(try pizzabot.route(for: "5x5 (0, 0) (1, 3) (4,4) (4, 2) (4, 2) (0, 1) (3, 2) (2, 3) (4, 1)"))
-}
-catch {
-    print(error)
+print(Messages.inputInstructionsString.rawValue)
+
+while let input = readLine() {
+    let result: String
+    do {
+        result = try pizzabot.route(for: input)
+    }
+    catch {
+        result = error.localizedDescription
+    }
+    print(Messages.result.rawValue, result)
+    print(Messages.inputInstructionsString.rawValue)
 }
